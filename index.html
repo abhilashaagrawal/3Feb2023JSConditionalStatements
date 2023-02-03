@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Conditional Statements</title>
+        <link rel="stylesheet" href="./css/style.css"/>
+        <style>
+
+        </style>
+        <script>
+             let yourStudyTime=10;
+             if(yourStudyTime>=10&&yourStudyTime<=12)
+             {
+                console.log('You have to study HTML');
+             }
+             else if(yourStudyTime>12&&yourStudyTime<=14)
+             {
+                console.log(`You have to study CSS`);
+             }
+             else if(yourStudyTime>14&&yourStudyTime<=18)
+             {
+                console.log("You have to study JS");
+             }
+             else{
+                console.log('You can go to bed');
+             }
+        </script>
+        <script>
+            var time=window.prompt('Please Enter The Time: ');
+            alert('Before type conversion "'+typeof time+'"');
+            var timeint=parseInt(time);
+            alert('After type conversion "'+typeof timeint+'"');
+
+            if(timeint>=4&&timeint<=12)
+            {
+                alert("GOOD MORNING");
+            }
+            else if(timeint>12&&timeint<=15)
+            {
+                window.alert('GOOD AFTERNOON');
+            }
+            else if(timeint>15&&timeint<=20)
+            {
+                alert(`GOOD EVENING`);
+            }
+            else{
+                alert('GOOD NIGHT');
+            }
+
+        </script>
+    </head>
+    <body>
+        
+
+        <script src="./js/script.js"></script>
+        <script>
+           let youngsterAge=18;
+           if(youngsterAge>=18)
+           {
+              alert("You can vote!");
+           }
+        </script>
+        <script>
+            var x=window.confirm("Are you 18+ ?");
+            alert(typeof x);
+            if(x===true)
+            {
+                window.alert('You can vote');
+            }
+            else{
+                alert("You can't vote");
+            }
+        </script>
+    </body>
+</html>
